@@ -26,12 +26,6 @@ h2 {
   font-weight: 700;
 }
 
-h3{
-  font-size: 2em;
-  font-weight: 700;
-}
-
-
 /* -------------Title section------------ */
 .title-div {
   background-color: #00ADB5;
@@ -185,11 +179,7 @@ td {
     font-size: 1.5em;
     font-weight: 700;
   }
-
-  h3{
-    font-size: 1em;
-    font-weight: 700;
-  }
+  
   .select {
     width: 13em;
     height: 2em;
