@@ -26,6 +26,12 @@ h2 {
   font-weight: 700;
 }
 
+h3{
+  font-size: 2em;
+  font-weight: 700;
+}
+
+
 /* -------------Title section------------ */
 .title-div {
   background-color: #00ADB5;
