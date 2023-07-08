@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix calculator</title>
+    <link rel="stylesheet" href="./assets/stylesheet/style.css" />
+    <!-- ------------font awesome------------ -->
+    <script src="https://kit.fontawesome.com/c898918390.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/stylesheet/style.css">
+</head>
+
+<body>
+    <div class="main-div">
+
+        <!-- ---------------title-section---------------- -->
+        <div class="title-div">
+            <h1>Matrix Calculator</h1>
+        </div>
+
+        <!-- ---------------select-operation---------------- -->
+        <div class="selection-div">
+            <h2>Select operation :</h2>
+            <select name="operations" class="select" onchange="getDimension()">
+                <option value="1">Addition of Matrix</option>
+                <option value="2">Subtraction of Matrix</option>
+                <option value="3">Multiplication of Matrix</option>
+                <option value="4">Determinant of Matrix</option>
+                <option value="5">Upper Triangular Matrix</option>
+                <option value="6">Lower Triangular Matrix</option>
+                <option value="7">Identity Matrix</option>
+            </select>
+        </div>
+
+        <!-- -------------------------action-buttons------------------- -->
+        <div class="button-div">
+            <button id="createBtn" class="action-button" onclick="getInpMatrix()">Create</button>
+            <button id="solveBtn" class="action-button" onclick="solve()">Solve</button>
+            <button id="resetBtn" class="action-button" onclick="reset()">Reset</button>
+        </div>
+
+        <!-- ---------------matrix dimension input---------------- -->
+        <div class="matrix-div">
+            <div class="dimension-div">
+                <div class="sgl-dimension dimensionInp">
+                    <h3>Matrix Dimension:</h3>
+                    <input type="text" inputmode="numeric" id="rowInp" onchange="dimInpValidation()" /> X
+                    <input type="text" inputmode="numeric" id="colInp" onchange="dimInpValidation()" />
+                </div>
+
+                <div class="dbl-dimension">
+
+                    <div class="dimensionInp">
+                        <h3>Matrix A Dimension:</h3>
+                        <input type="text" inputmode="numeric" id="rowAInp" onchange="dimInpValidation()" /> X
+                        <input type="text" inputmode="numeric" id="colAInp" onchange="dimInpValidation()" />
+                    </div>
+
+                    <div class="dimensionInp">
+                        <h3>Matrix B Dimension:</h3>
+                        <input type="text" inputmode="numeric" id="rowBInp" onchange="dimInpValidation()" /> X
+                        <input type="text" inputmode="numeric" id="colBInp" onchange="dimInpValidation()" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------------------matrix input------------------------- -->
+            <div id="matrixArea">
+                <div class="inp input"></div>
+                <div class="inpA input"></div>
+                <div class="inpB input"></div>
+            </div>
+
+            <!-- -----------------------final answer--------------------- -->
+            <div id="answerArea">
+            </div>
+        </div>
+
+        <!-- ----------------------- social links --------------------- -->
+        <footer>
+            <div class="social-links-div">
+                <ul class="social-links">
+                    <li>
+                        <a href="https://www.facebook.com/dev.mulkalwar/" target="_blank">
+                            <i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/dev_mulkalwar/" target="_blank">
+                            <i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/dev_mulkalwar" target="_blank">
+                            <i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/dev-mulkalwar-b2745a258/" target="_blank">
+                            <i class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/devmulkalwar" target="_blank">
+                            <i class="fab fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- -----------------------script--------------------- -->
+    <script src="./assets/script/index.js"></script>
+</body>
+
+</html>

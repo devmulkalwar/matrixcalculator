@@ -1,0 +1,228 @@
+/* google font link */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap");
+
+/* -------style applied to all element ------ */
+index.html* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+
+/* ---------style applied to body----------- */
+body {
+  text-align: center;
+  color: #ffffff;
+  background: #222831;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+/* -------------Title section------------ */
+.title-div {
+  background-color: #00ADB5;
+  padding: 0.5% 1.5%;
+}
+
+/* -----------------select operation div--------------0 */
+.selection-div h1 {
+  padding: 1% 3%;
+  margin: 1% 3%;
+}
+
+.select {
+  width: 15em;
+  height: 2em;
+  font-size: 1em;
+  font-weight: 400;
+  font-size: 1.3em;
+  text-align: center;
+  padding: 0.3% 1%;
+  border-radius: 0.6em;
+}
+
+/* --------------------matrix dimension div----------------- */
+.dimensionInp input {
+  background-color: white;
+  height: 2em;
+  width: 2em;
+  margin: 0.5%;
+  font-size: 1.2em;
+  font-weight: 700;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+.dimmension-div {
+  padding: 1% 3%;
+  margin: 1% 3%;
+}
+
+.hidden-dimension {
+  visibility: hidden;
+  position: fixed;
+}
+
+/* ---------------buttons section------------------ */
+.button-div {
+  margin: 1% 3%;
+}
+
+.action-button {
+  width: 5.5em;
+  height: 2.3em;
+  margin: 1%;
+  padding: 0.5%;
+  border: solid #333;
+  border-radius: 0.6em;
+  font-size: 1.2em;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.action-button:hover{
+  background-color: #00ADB5;
+  border: solid white;
+  color: white;
+} 
+
+/* ------------------matrix-div section--------------- */
+.matrix-div {
+  margin: 1%;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid white;
+  border-radius: 1em;
+}
+
+#dataInputBox,
+tr,
+td {
+  align-content: center;
+  border-collapse: collapse;
+}
+
+#matrixArea input {
+  background-color: white;
+  height: 2em;
+  width: 2em;
+  margin: 0.5%;
+  font-size: 1.2em;
+  font-weight: 700;
+  border-radius: 0.5em;
+  text-align: center;
+  align-items: center;
+}
+
+.matTable {
+  display: inline-block;
+}
+
+/* ------------------answer-div section--------------- */
+#answerArea input {
+  background-color: white;
+  height: 2em;
+  width: 2em;
+  margin: 0.5%;
+  font-size: 1.2em;
+  font-weight: 700;
+  border-radius: 0.5em;
+  text-align: center;
+  align-items: center;
+}
+
+/* -----------------social links---------------- */
+.social-links-div {
+  padding: 1% 3%;
+}
+
+.social-links {
+  padding: 0em 0em;
+  margin: 0em 0em;
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.social-links i {
+  color: white;
+  font-size: 2em;
+  margin: 0.4em;
+}
+
+/* -----------------main-div section------------------- */
+.main-div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* --------------------media section--------------------- */
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+  h3{
+    font-size: 1em;
+    font-weight: 700;
+  }
+  .select {
+    width: 13em;
+    height: 2em;
+    font-size: 1em;
+    padding: 0.25% 0.5%;
+    margin: 0.5%;
+  }
+
+  .action-button {
+    width: 6em;
+    height: 2em;
+    margin: 0.5%;
+    padding: 0.3%;
+    font-size: 1em;
+  }
+
+  .dimensionInp input {
+    height: 2em;
+    width: 2em;
+    font-size: 1em;
+    border-radius: 0.5em;
+  }
+
+  #matrixArea input {
+    height: 2em;
+    width: 2em;
+    font-size: 1em;
+    border-radius: 0.5em;
+  }
+
+  #answerArea input{
+    height: 2em;
+    width: 2em;
+    font-size: 1em;
+    border-radius: 0.5em;
+  }
+
+  .social-links i {
+    font-size: 1.5em;
+    margin: 0.3em;
+  }
+}
