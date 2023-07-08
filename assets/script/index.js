@@ -106,7 +106,7 @@ function getInpMatrix() {
 function createInpMatrix(row, col, mat, cls) {
 
 	let html = `<table  class="matTable">`;
-	html += `<h3>Enter Matrix ${mat} Values :<h3>`
+	html += `<h3>Enter Matrix ${mat} Values:<h3>`
 
 	for (let i = 0; i < row; i++) {
 		html += "<tr>";
